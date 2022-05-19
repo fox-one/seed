@@ -22,10 +22,10 @@ release:
 dockers:
   -
     image_templates:
-    - "docker.pkg.github.com/fox-one/seed/{{ .ProjectName }}:latest"
-    - "docker.pkg.github.com/fox-one/seed/{{ .ProjectName }}:{{ .Major }}"
-    - "docker.pkg.github.com/fox-one/seed/{{ .ProjectName }}:{{ .Major }}.{{ .Minor }}"
-    - "docker.pkg.github.com/fox-one/seed/{{ .ProjectName }}:{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
+    - "ghcr.io/fox-one/seed/{{ .ProjectName }}:latest"
+    - "ghcr.io/fox-one/seed/{{ .ProjectName }}:{{ .Major }}"
+    - "ghcr.io/fox-one/seed/{{ .ProjectName }}:{{ .Major }}.{{ .Minor }}"
+    - "ghcr.io/fox-one/seed/{{ .ProjectName }}:{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
     build_flag_templates:
     - "--pull"
     - "--label=org.opencontainers.image.created={{.Date}}"

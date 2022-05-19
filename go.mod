@@ -1,4 +1,4 @@
-module github.com/golang-templates/seed
+module github.com/fox-one/seed
 
 go 1.18
 

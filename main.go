@@ -1,10 +1,17 @@
 // Application which greets you.
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+var (
+	version = "0.0.1"
+	commit  = ""
+)
 
 func main() {
-	fmt.Println(greet())
+	fmt.Println(greet(), version, commit)
 }
 
 func greet() string {
